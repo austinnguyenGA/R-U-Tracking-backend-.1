@@ -2,7 +2,7 @@
   "name": "r-u-tracking-backend-.1",
   "version": "1.0.0",
   "description": "test test",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/austinnguyenGA/R-U-Tracking-backend-.1#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "connect-mongodb-session": "^3.1.1",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.2",
