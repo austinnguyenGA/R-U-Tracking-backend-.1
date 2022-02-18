@@ -65,6 +65,8 @@ app.use(express.json())
 
 app.use('/swims', require('./controllers/swimController'))
 app.use('/runs', require('./controllers/runController'))
+app.use('/exercises', require('./controllers/workoutController'))
+app.use('/users', require('./controllers/userController'))
 
 app.listen(PORT, () => {
   console.log('Tracking on port', PORT,)
