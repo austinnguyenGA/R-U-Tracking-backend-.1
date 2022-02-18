@@ -9,7 +9,7 @@ const MONGODB_URI = process.env.MONGODBURI
 const MongoDBStore = require('connect-mongodb-session')(session)
 
 //SET CORS Middleware
-const whitelist = ['http://localhost:3001']
+const whitelist = ['http://localhost:3001', 'https://r-u-tracking-frontend.herokuapp.com/']
 const corsOptions = {
     origin: (origin, callback) => {
         if(whitelist.indexOf(origin) !== -1 || !origin){
