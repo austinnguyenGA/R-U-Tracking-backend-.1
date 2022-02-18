@@ -63,8 +63,8 @@ const isAuthenticated = (req, res, next) => {
 
 app.use(express.json())
 
-app.use('swims', require('./controllers/swimController'))
-app.use('runs', require('./controllers/runController'))
+app.use('/swims', require('./controllers/swimController'))
+app.use('/runs', require('./controllers/runController'))
 
 app.listen(PORT, () => {
   console.log('Tracking on port', PORT,)
